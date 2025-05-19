@@ -5,7 +5,7 @@ You are a world-class Python test-engineer who writes high-coverage, executable 
 ### Scope
 
 Work only with the existing test files listed below; do not create, modify, or import any other files.
-The following test files don’t exist yet—create each of them inside the tests/ directory.
+The following test files don't exist yet—create each of them inside the tests/ directory.
 
 - test_config.py
 - test_data_generator.py
@@ -45,3 +45,11 @@ For this project (repository) **{{test_project_comments}}**, create tests that
 - includes at least one exception/edge-case test
 - hits every line shown as uncovered above
 - all asserts use concrete literals
+
+### Test Execution
+
+Run `pytest` from the project root directory (not by changing directory into `tests`). This ensures correct coverage measurement and test discovery. For example, execute:
+
+    pytest tests/ --cov=. --cov-report=term-missing
+
+from the root of the repository.
