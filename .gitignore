@@ -1,12 +1,12 @@
-.cursor
+.cursor/
 
-__pycache__
+__pycache__/
 
-.pytest_cache
+.pytest_cache/
 
 .coverage
 .coveragerc
-coverage_html
+coverage_html/
 
 pytest.ini
 
